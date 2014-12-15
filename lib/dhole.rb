@@ -4,6 +4,8 @@ require "dhole/page.rb"
 require "dhole/revision.rb"
 require "dhole/langlink.rb"
 require "dhole/text.rb"
+require "dhole/image.rb"
+require "dhole/imagelink.rb"
 
 module Dhole
   class Dhole
