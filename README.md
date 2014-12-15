@@ -1,31 +1,16 @@
-# Dhole
+dhole
+=====
 
-TODO: Write a gem description
+A Ruby gem with ActiveRecord models and relations for the Mediawiki DB schema.
 
-## Installation
 
-Add this line to your application's Gemfile:
+What is a Dhole?
+================
 
-```ruby
-gem 'dhole'
-```
+I thought of calling this gem *mworm* - Mediawiki ORM - but figured as long as we're entering worm territory, we may as well go all the way.  Besides:
 
-And then execute:
+"Dholes are huge, slimy worm-like creatures, at least several hundred feet long. Because they avoid daylight and are covered in viscous goo, their features are nearly impossible to discern."
 
-    $ bundle
+...and that is a pretty good description of the Mediawiki DB schema, right? :)
 
-Or install it yourself as:
-
-    $ gem install dhole
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/dhole/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+E-mail asaf.bartov@gmail.com with questions or file issues on GitHub at https://github.com/abartov/dhole
