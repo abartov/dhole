@@ -6,6 +6,7 @@ require "dhole/langlink.rb"
 require "dhole/text.rb"
 require "dhole/image.rb"
 require "dhole/imagelink.rb"
+require "dhole/globalimagelink.rb"
 
 module Dhole
   class Dhole
