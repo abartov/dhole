@@ -20,6 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "activerecord"
-  spec.add_development_dependency "composite_primary_keys"
+  spec.add_runtime_dependency "activerecord"
+  spec.add_runtime_dependency "composite_primary_keys"
 end
