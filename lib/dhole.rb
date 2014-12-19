@@ -8,6 +8,8 @@ require "dhole/text.rb"
 require "dhole/image.rb"
 require "dhole/imagelink.rb"
 require "dhole/globalimagelink.rb"
+require "dhole/category.rb"
+require "dhole/categorylink.rb"
 
 module Dhole
   class Dhole
