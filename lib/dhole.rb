@@ -1,4 +1,5 @@
 require 'active_record'
+require 'composite_primary_keys'
 require "dhole/version"
 require "dhole/page.rb"
 require "dhole/revision.rb"
