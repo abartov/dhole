@@ -10,6 +10,9 @@ module Dhole
     def member_pages
       members.select{|cl| cl.cl_type == 'page'}.map {|cl| Page.find(cl.cl_from)}
     end
+    def member_files
+      members.select{|cl| cl.cl_type == 'file'}.map {|cl| Image.find(cl.cl_from)}
+    end
     # return only members of specified type ('file','page', 'subcat')
     def members_by_type(mtype)
       # TBD
