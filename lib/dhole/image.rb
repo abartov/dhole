@@ -13,6 +13,15 @@ module Dhole
     def global_usage
       GlobalImageLink.where(gil_to: img_name, gil_namespace_id: '0').pluck(:gil_wiki, :gil_page)
     end
+    def global_usage_by_project
+      gu = global_usage
+      ret = {}
+      gu.each {|u|
+        ret[u[0]] = [] if ret[u[0]].nil?
+        ret[u[0]] << u[1]
+      }
+      return ret
+    end
   end
 end
 
