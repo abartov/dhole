@@ -7,6 +7,12 @@ module Dhole
     def members
       CategoryLink.where(cl_to: cat_title) || []
     end
+    def member_page_titles
+      members.select{|cl| cl.cl_type == 'page'}.pluck(:cl_from)
+    end
+    def member_file_titles
+      members.select{|cl| cl.cl_type == 'file'}.pluck(:cl_from)
+    end
     def member_pages
       members.select{|cl| cl.cl_type == 'page'}.map {|cl| Page.find(cl.cl_from)}
     end
