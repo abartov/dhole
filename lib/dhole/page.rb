@@ -7,5 +7,9 @@ module Dhole
     has_many :imagelinks, class_name: 'ImageLink', foreign_key: 'il_from'
     #has_many :images, through: :imagelinks, class_name: 'Image'
     belongs_to :latest_revision, class_name: 'Revision', foreign_key: 'page_latest'
+    
+    def is_file?
+      page_namespace == 6
+    end
   end
 end
